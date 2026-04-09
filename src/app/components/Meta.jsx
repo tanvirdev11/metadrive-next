@@ -79,7 +79,7 @@ import Image from 'next/image';
 
 export default function Meta() {
     return (
-        <section className='overflow-hidden bg-white mt-25'>
+        <section className='overflow-hidden bg-white'>
             <div className='px-4'> {/* মোবাইলে সাইডে গ্যাপ রাখার জন্য */}
 
                 {/* Badge Section */}

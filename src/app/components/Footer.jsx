@@ -1,25 +1,27 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 export default function Footer() {
     return (
         <>
-            <footer className="relative w-full bg-[#F9F9FB] pt-10 mt-96 overflow-hidden font-sans border-t border-gray-100">
+            <footer className="relative w-full bg-[#F9F9FB] pt-10 mt-96 overflow-hidden font-sans border-t border-gray-100" data-aos="fade-up" data-aos-delay="800">
                 <div className="max-w-7xl mx-auto px-6 relative z-10">
 
                     {/* Top Section: Logo and Slogan */}
                     <div className="flex flex-col items-center text-center mb-16">
-                        <div className="flex items-center gap-2 mb-4">
+                        <div className="flex items-center gap-2 mb-4" data-aos="fade-up" data-aos-delay="700">
                             <Image src="/Frame.svg" alt="MetaDrive Logo" width={20} height={40} className="h-auto" />
                             <p className='text-black font-bold text-2xl'>MetaDrive</p>
                         </div>
-                        <p className="max-w-2xl text-gray-600 leading-relaxed">
+                        <p className="max-w-2xl text-gray-600 leading-relaxed" data-aos="fade-up" data-aos-delay="700">
                             Powering smarter advertising through reliable infrastructure,
                             expert support, and performance-driven solutions.
                         </p>
 
-                        <div className="flex justify-between w-full mt-[-90px] text-[12px] text-gray-400">
+                        <div className="flex justify-between w-full mt-[-90px] text-[12px] text-gray-400" data-aos="fade-up" data-aos-delay="700">
                             <span>© 2026 MetaDrive.</span>
                             <span>All rights reserved.</span>
                         </div>
@@ -29,7 +31,7 @@ export default function Footer() {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-20 pt-10">
 
                         {/* Quick Links */}
-                        <div>
+                        <div data-aos="fade-up" data-aos-delay="600">
                             <h4 className="font-bold text-gray-900 mb-6 text-lg">Quick Links</h4>
                             <ul className="space-y-3 text-gray-600">
                                 <li><Link href="/solutions" className="hover:text-blue-600 transition-colors">Solutions</Link></li>
@@ -40,7 +42,7 @@ export default function Footer() {
                         </div>
 
                         {/* Features */}
-                        <div>
+                        <div data-aos="fade-up" data-aos-delay="700">
                             <h4 className="font-bold text-gray-900 mb-6 text-lg">Features</h4>
                             <ul className="space-y-3 text-gray-600">
                                 <li><Link href="#" className="hover:text-blue-600">Ad Account Access</Link></li>
@@ -52,7 +54,7 @@ export default function Footer() {
                         </div>
 
                         {/* Resources */}
-                        <div>
+                        <div data-aos="fade-up" data-aos-delay="800">
                             <h4 className="font-bold text-gray-900 mb-6 text-lg">Resources</h4>
                             <ul className="space-y-3 text-gray-600">
                                 <li><Link href="/help" className="hover:text-blue-600">Help Center</Link></li>
@@ -63,7 +65,7 @@ export default function Footer() {
                         </div>
 
                         {/* Get In Touch & Socials */}
-                        <div>
+                        <div data-aos="fade-up" data-aos-delay="800">
                             <h4 className="font-bold text-gray-900 mb-6 text-lg">Get In Touch</h4>
                             <ul className="space-y-2 text-gray-600 mb-6">
                                 <li>support@metadrive.com</li>
@@ -73,16 +75,16 @@ export default function Footer() {
 
                             {/* Social Icons using your SVG names */}
                             <div className="flex gap-4 pt-10">
-                                <Link href="#" className="hover:opacity-80 transition-opacity">
+                                <Link href="#" className="hover:opacity-80 transition-opacity" data-aos="fade-up" data-aos-delay="500">
                                     <Image src="/Frame (1).svg" alt="Facebook" width={32} height={32} />
                                 </Link>
-                                <Link href="#" className="hover:opacity-80 transition-opacity">
+                                <Link href="#" className="hover:opacity-80 transition-opacity" data-aos="fade-up" data-aos-delay="600">
                                     <Image src="/Frame (2).svg" alt="LinkedIn" width={32} height={32} />
                                 </Link>
-                                <Link href="#" className="hover:opacity-80 transition-opacity">
+                                <Link href="#" className="hover:opacity-80 transition-opacity" data-aos="fade-up" data-aos-delay="700">
                                     <Image src="/Frame (3).svg" alt="YouTube" width={32} height={32} />
                                 </Link>
-                                <Link href="#" className="hover:opacity-80 transition-opacity">
+                                <Link href="#" className="hover:opacity-80 transition-opacity" data-aos="fade-up" data-aos-delay="800">
                                     <Image src="/Frame (4).svg" alt="X" width={32} height={32} />
                                 </Link>
                             </div>

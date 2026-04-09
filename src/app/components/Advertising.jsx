@@ -163,24 +163,24 @@ export default function Advertising() {
     return (
         <>
             <div className='px-4 pb-20 overflow-hidden'> {/* মোবাইলে সাইড গ্যাপের জন্য */}
-                <div className='flex justify-center mt-10 md:mt-20'>
+                <div className='flex justify-center mt-10 md:mt-20' data-aos="fade-up" data-aos-delay="700">
                     <div className='flex justify-center items-center bg-[#EBF1FD] rounded-full mt-7 w-[120px] py-1 px-3 text-center' >
                         <div className='w-[25px] h-[25px] bg-no-repeat bg-center' style={{ backgroundImage: `url("/Star 13.svg")` }}></div>
                         <p className='text-black'>Advertising</p>
                     </div>
                 </div>
-                <div className='text-center mt-[33px]'>
+                <div className='text-center mt-[33px]' data-aos="fade-up" data-aos-delay="700">
                     <h1 className='font-bold text-black text-3xl'>What we actually do</h1>
                 </div>
-                <div className='flex justify-center mt-[20px]'>
+                <div className='flex justify-center mt-[20px]' data-aos="fade-up" data-aos-delay="700">
                     <p className='w-full max-w-[507px] text-[#494949] text-center'>We provide a complete advertising infrastructure designed to help brands launch, manage, and scale Meta ad campaigns with confidence.</p>
                 </div>
 
-                {/* প্রথম জোড়া: Card 1 & Card 2 */}
+                {/*  Card 1 & Card 2 */}
                 <div className='flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10 mt-10 md:mt-20'>
 
-                    {/* Card 1 - আপনার অরিজিনাল কোড */}
-                    <div className='w-full max-w-[618px] border-2 border-gray-200 rounded-xl relative h-auto pb-5 lg:pb-0'>
+                    {/* Card 1 */}
+                    <div className='w-full max-w-[618px] border-2 border-gray-200 rounded-xl relative h-auto pb-5 lg:pb-0' data-aos="fade-up" data-aos-delay="800">
                         <div className="absolute left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0 lg:ml-50 w-55 h-55 mt-5 rounded-full border-[0.83px] border-blue-100" />
                         <div className="absolute left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0 lg:ml-58 w-40 h-40 mt-12 rounded-full border-[0.83px] border-blue-100" />
                         <div className='mt-20'>
@@ -195,8 +195,8 @@ export default function Advertising() {
                         </div>
                     </div>
 
-                    {/* Card 2 - আপনার অরিজিনাল কোড */}
-                    <div className='w-full max-w-[580px] rounded-xl border-2 border-[#EEEEEE] flex flex-col'>
+                    {/* Card 2  */}
+                    <div className='w-full max-w-[580px] rounded-xl border-2 border-[#EEEEEE] flex flex-col' data-aos="fade-up" data-aos-delay="800">
                         <div className='w-full flex justify-center lg:justify-start lg:ml-25 mt-15'>
                             <div className='w-full max-w-[359px] bg-white p-4 lg:p-0'>
                                 <div className='flex justify-between items-center px-3 lg:px-0'>
@@ -223,11 +223,11 @@ export default function Advertising() {
                     </div>
                 </div>
 
-                {/* দ্বিতীয় জোড়া: Card 3 & Card 4 */}
+                {/* Card 3 & Card 4 */}
                 <div className='flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10 mt-10'>
 
-
-                    <div className='w-[523px] rounded-2xl border-2 border-gray-200 mt-5 mb-10'>
+                    {/* Card 3 */}
+                    <div className='w-[523px] rounded-2xl border-2 border-gray-200 mt-5 mb-10' data-aos="fade-up" data-aos-delay="700">
                         <div className='flex justify-center relative'>
                             <button className='bg-black px-2 py-1 rounded-full absolute mt-25'>Campaign</button>
                         </div>
@@ -261,8 +261,8 @@ export default function Advertising() {
                         </div>
                     </div>
 
-                    {/* Card 4 - আপনার অরিজিনাল কোড */}
-                    <div className="w-full max-w-[550px] min-h-[390px] bg-white rounded-3xl border-2 border-gray-200 font-sans h-auto pb-5 lg:pb-0">
+                    {/* Card 4  */}
+                    <div className="w-full max-w-[550px] min-h-[390px] bg-white rounded-3xl border-2 border-gray-200 font-sans h-auto pb-5 lg:pb-0" data-aos="fade-up" data-aos-delay="700">
                         <div className="relative h-60 bg-[#f7f9ff] flex items-center justify-center overflow-hidden border-b border-gray-100">
                             <div className="relative w-full h-full flex items-center justify-center scale-75 md:scale-100">
                                 <div className="absolute inset-0 bg-white/40 backdrop-blur-sm z-0"></div>

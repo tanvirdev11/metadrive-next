@@ -43,6 +43,8 @@
 
 "use client"
 import React from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Brands() {
     const logos = [
@@ -71,19 +73,19 @@ export default function Brands() {
                 }
             `}} />
 
-            <div className='flex justify-center'>
+            <div className='flex justify-center' data-aos="fade-up" data-aos-delay="800">
                 <div className='flex justify-center items-center bg-[#EBF1FD] rounded-full mt-7 w-[95px] py-1 px-2 text-center'>
                     <div className='w-[20px] h-[20px] bg-no-repeat bg-center' style={{ backgroundImage: `url("/Star 13.svg")` }}></div>
                     <p className='text-black text-sm ml-1'>Brands</p>
                 </div>
             </div>
 
-            <div className='text-center mt-5 mb-10'>
+            <div className='text-center mt-5 mb-10' data-aos="fade-up" data-aos-delay="700">
                 <h1 className='text-[#1b1919] text-[18px] font-bold'>Trusted By Exceptional Brands</h1>
             </div>
 
             {/* Marquee Section */}
-            <div className='flex justify-center'>
+            <div className='flex justify-center' data-aos="fade-up" data-aos-delay="600">
                 <div className='w-[1000px] h-[50px]'>
                     <div className='marquee-container relative overflow-hidden'>
                         <div className='animate-marquee-scroll flex gap-5 items-center'>

@@ -296,6 +296,8 @@
 
 
 import React from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 export default function Powerful() {
     const cardData = {
@@ -316,16 +318,16 @@ export default function Powerful() {
         <>
             <div className='bg-[#FCFCFC] px-4 pb-20 overflow-hidden'>
                 <div className='text-center'>
-                    <div className='flex justify-center mt-10 md:mt-20'>
+                    <div className='flex justify-center mt-10 md:mt-20' data-aos="fade-up" data-aos-delay="700">
                         <div className='flex justify-center items-center bg-[#EBF1FD] rounded-full mt-7 w-[190px] py-2 px-3' >
                             <div className='w-[25px] h-[25px] bg-no-repeat bg-center' style={{ backgroundImage: `url("/Star 13.svg")` }}></div>
                             <p className='text-black font-medium'>HOW IT WORKS</p>
                         </div>
                     </div>
-                    <div className='flex justify-center mt-[16px]'>
+                    <div className='flex justify-center mt-[16px]' data-aos="fade-up" data-aos-delay="700">
                         <h1 className='text-black font-bold text-2xl md:text-3xl'>Simple Steps Powerful Results.</h1>
                     </div>
-                    <div className='flex justify-center mt-[24px]'>
+                    <div className='flex justify-center mt-[24px]' data-aos="fade-up" data-aos-delay="700">
                         <p className='text-[#494949] w-full max-w-[482px]'>Our streamlined process makes it easy to launch, manage, and scale your ad campaigns with confidence.</p>
                     </div>
                 </div>
@@ -334,31 +336,8 @@ export default function Powerful() {
                 <div className='max-w-7xl mx-auto flex flex-wrap justify-center gap-6 mt-[54px]'>
 
                     {/* Card 1 - Signup */}
-                    {/* <div className='w-full max-w-[400px] h-[385px] bg-[#EEEEF2] rounded-3xl px-[24px] pt-[40px] relative overflow-hidden shrink-0'>
-                        <div className='flex justify-between items-center relative z-10'>
-                            <h1 className='text-black font-bold text-3xl'>Sing-up</h1>
-                            <div className='flex text-2xl'>
-                                <p className='text-black'>1/</p>
-                                <p className='text-[#9B9B9D]'>5</p>
-                            </div>
-                        </div>
-                        <div className='flex justify-center mt-10 relative'>
-                            <div className='absolute right-0 w-40 h-52 mt-5 opacity-50 md:opacity-100' style={{ backgroundImage: `url("/Rectangle 686.png")`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}></div>
-                            <div className='w-[311px] h-[197px] rounded-xl bg-[#FFFFFF] relative z-20 shadow-sm'>
-                                <div className='py-[35px] flex justify-center'>
-                                    <div className='bg-[#F2F2F5] rounded-full w-[48px] h-[48px] flex justify-center items-center'>
-                                        <div className='bg-no-repeat bg-center w-5 h-5' style={{ backgroundImage: `url("/user.svg")` }}></div>
-                                    </div>
-                                </div>
-                                <div className='flex flex-col items-center gap-2'>
-                                    <div className='w-[197px] h-[17px] rounded-xl bg-[#EBEBEF]'></div>
-                                    <div className='w-[80%] h-[12px] rounded-xl bg-[#EBEBEF]'></div>
-                                    <div className='w-[80%] h-[12px] rounded-xl bg-[#EBEBEF]'></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
-                    <div className='w-[400px] h-[385px] bg-[#EEEEF2] rounded-3xl px-[24px] pt-[40px] pb-[43px]'>
+
+                    <div className='w-[400px] h-[385px] bg-[#EEEEF2] rounded-3xl px-[24px] pt-[40px] pb-[43px] shrink-0' data-aos="fade-up" data-aos-delay="400">
                         <div className='flex justify-between'>
                             <h1 className='text-black font-bold text-3xl'>Sing-up</h1>
                             <div className='flex'>
@@ -385,7 +364,7 @@ export default function Powerful() {
                         </div>
                     </div>
                     {/* Card 2 - Add Funds */}
-                    <div className='w-full max-w-[410px] h-[385px] bg-[#EEEEF2] rounded-3xl p-[24px] shrink-0'>
+                    <div className='w-full max-w-[410px] h-[385px] bg-[#EEEEF2] rounded-3xl p-[24px] shrink-0' data-aos="fade-up" data-aos-delay="500">
                         <div className='flex justify-between items-center'>
                             <h1 className='text-black font-bold text-2xl'>Add Funds</h1>
                             <div className='flex text-2xl'>
@@ -412,7 +391,7 @@ export default function Powerful() {
                     </div>
 
                     {/* Card 3 - Ad Account */}
-                    <div className='w-full max-w-[411px] h-[385px] bg-[#EEEEF2] rounded-3xl p-[24px] shrink-0 overflow-hidden'>
+                    <div className='w-full max-w-[411px] h-[385px] bg-[#EEEEF2] rounded-3xl p-[24px] shrink-0 overflow-hidden' data-aos="fade-up" data-aos-delay="600">
                         <div className='flex justify-between items-center'>
                             <h1 className='text-black font-bold text-2xl'>Ad Account</h1>
                             <div className='flex text-2xl'>
@@ -438,7 +417,7 @@ export default function Powerful() {
                     </div>
 
                     {/* Card 4 - Launch Campaigns */}
-                    <div className='w-full max-w-[628px] aspect-[628/385] rounded-3xl bg-[#EEEEF2] pt-[6%] px-[4%] relative overflow-hidden'>
+                    <div className='w-full max-w-[628px] aspect-[628/385] rounded-3xl bg-[#EEEEF2] pt-[6%] px-[4%] relative overflow-hidden' data-aos="fade-up" data-aos-delay="700">
                         {/* Header */}
                         <div className='flex justify-between items-center'>
                             <h1 className='text-black font-bold text-[clamp(1rem,4vw,1.5rem)]'>Launch Your Campaigns</h1>
@@ -494,7 +473,7 @@ export default function Powerful() {
                     </div>
 
                     {/* Card 5 - Scale & Optimize */}
-                    <div className="w-[628px] h-[385px] bg-[#F2F4F8] p-8 rounded-3xl shadow-sm font-sans border border-gray-100 overflow-hidden relative">
+                    <div className="w-[628px] h-[385px] bg-[#F2F4F8] p-8 rounded-3xl shadow-sm font-sans border border-gray-100 overflow-hidden relative" data-aos="fade-up" data-aos-delay="800">
 
 
                         <div className="flex justify-between items-center mb-10">
